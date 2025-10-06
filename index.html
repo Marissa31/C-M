@@ -175,15 +175,15 @@ html, body {
         <div class="flex justify-between items-center">
             <!-- Logo -->
             <div class="text-xl font-bold text-gray-800 font-['Playfair_Display']">
-                Beady Sales
+               C&M Salon
             </div>
             
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-6">
-                <a href="#" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">About</a>
-                <a href="#" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">Service</a>
-                <a href="#" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">Gallery</a>
-                <a href="#" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">Contact</a>
+                <a href="#home" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">Home</a>
+                <a href="#services" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">Service</a>
+                <a href="#about" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">About</a>
+                <a href="#contact" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">Contact</a>
             </nav>
             
             <!-- Mobile menu button -->
@@ -197,10 +197,10 @@ html, body {
         <!-- Mobile Menu (Hidden by default) -->
         <div class="md:hidden hidden bg-white mt-3 rounded-lg shadow-lg p-4" id="mobile-menu">
             <div class="flex flex-col space-y-3">
-                <a href="#" class="text-gray-700 hover:text-pink-500 font-medium py-2">About</a>
-                <a href="#" class="text-gray-700 hover:text-pink-500 font-medium py-2">Service</a>
-                <a href="#" class="text-gray-700 hover:text-pink-500 font-medium py-2">Gallery</a>
-                <a href="#" class="text-gray-700 hover:text-pink-500 font-medium py-2">Contact</a>
+                <a href="#home" class="text-gray-700 hover:text-pink-500 font-medium py-2">Home</a>
+                <a href="#services" class="text-gray-700 hover:text-pink-500 font-medium py-2">Service</a>
+                <a href="#about" class="text-gray-700 hover:text-pink-500 font-medium py-2">About</a>
+                <a href="#contact" class="text-gray-700 hover:text-pink-500 font-medium py-2">Contact</a>
             </div>
         </div>
     </div>
@@ -353,30 +353,38 @@ html, body {
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 relative">
-        <div class="absolute inset-0 z-0">
-            <div class="absolute h-full w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBWgVXY7UYF6zQsiiXzKycFwu469NekYdKfaw0Udh_r18kF9Ovqb4blFnwdikIqiUSbE-IKB9cYrHq6P3dtvXVWCPFIoNvuyFJ3UKmDIFeYqb1bWiVqMC8N9JyRFo0U-t3dAK7P061Q8hw9XiLy2ktjhjTUqaMbqf3r1n88iVV5zlONGYStou13vItU1ndu_az_0J-W4Wewt2--14ucxn9oJYOmLPY8xSjdtqX95i-g96mCMdBjwrIYR8ix3JnJ5kOzoaXWQfGtgzmn");'></div>
-            <div class="absolute inset-0 bg-background-light/50 dark:bg-background-dark/70 backdrop-blur-xl"></div>
+ <section id="about" class="py-12 md:py-20 scroll-mt-24 bg-white relative z-10">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-8 md:mb-12">
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-800">About Us</h2>
+            <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
+                Discover the heart and soul of Luminous Beauty.
+            </p>
         </div>
-        <div class="relative z-10 max-w-4xl mx-auto">
-            <div class="p-8 md:p-12 rounded-xl glassmorphism text-foreground-light dark:text-foreground-dark">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight">About Us</h2>
-                    <p class="mt-4 text-lg text-subtle-light dark:text-subtle-dark">Discover the heart and soul of C&M.</p>
+        
+        <div class="max-w-4xl mx-auto">
+            <div class="space-y-8 md:space-y-12">
+                <div>
+                    <h3 class="text-xl md:text-2xl font-bold text-primary mb-4">Our Story</h3>
+                    <p class="text-gray-700 leading-relaxed text-sm md:text-base">
+                        Luminous Beauty was founded in 2010 with a vision to redefine beauty and wellness. 
+                        Our journey began with a small team of passionate stylists and has grown into a 
+                        renowned salon known for its exceptional service and innovative techniques.
+                    </p>
                 </div>
-                <div class="space-y-16">
-                    <div class="fade-in-section">
-                        <h3 class="text-2xl font-bold text-primary mb-4">Our Story</h3>
-                        <p class="text-foreground-light dark:text-foreground-dark/90 leading-relaxed"> C&M was founded in 2010 with a vision to redefine beauty and wellness. Our journey began with a small team of passionate stylists and has grown into a renowned salon known for its exceptional service and innovative techniques. We are committed to providing a luxurious and personalized experience for each client, ensuring they leave feeling refreshed and radiant.</p>
-                    </div>
-                    <div class="fade-in-section">
-                        <h3 class="text-2xl font-bold text-primary mb-4">Our Mission & Philosophy</h3>
-                        <p class="text-foreground-light dark:text-foreground-dark/90 leading-relaxed">At C&M, our mission is to enhance natural beauty and promote overall well-being. We believe in the power of self-care and strive to create a sanctuary where clients can relax, rejuvenate, and discover their best selves. Our philosophy is centered around personalized care and attention to detail. We take the time to understand each client's unique needs and preferences, tailoring our services to achieve their desired look. We are committed to creating a welcoming and inclusive environment where everyone feels valued and pampered.</p>
-                    </div>
-                   
+                
+                <div>
+                    <h3 class="text-xl md:text-2xl font-bold text-primary mb-4">Our Mission</h3>
+                    <p class="text-gray-700 leading-relaxed text-sm md:text-base">
+                        At Luminous Beauty, our mission is to enhance natural beauty and promote overall 
+                        well-being. We believe in the power of self-care and strive to create a sanctuary 
+                        where clients can relax, rejuvenate, and discover their best selves.
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
+</section>
     </section>
 
     <!-- Contact Section -->
@@ -586,3 +594,4 @@ document.addEventListener('DOMContentLoaded', function() {
 </body>
 
 </html>
+

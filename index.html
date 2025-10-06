@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title> C&M Salon</title>
+    <title>C&M Salon</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -83,10 +83,10 @@
             }
         }
         /* Add this to your styles */
-html, body {
-    overflow-x: hidden;
-    max-width: 100%;
-}
+        html, body {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -137,77 +137,55 @@ html, body {
     </script>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-text-dark dark:text-text-light">
-    <!-- Header -->
-<header class="fixed w-full bg-gradient-to-r from-pink-50 to-purple-50 backdrop-blur-md z-50 shadow-sm">
-        <div class="container mx-auto flex h-20 items-center justify-between">
-            <div class="flex items-center gap-3">
-                <svg class="h-8 w-8 text-primary-start" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="logoGradient" x1="0%" x2="100%" y1="0%" y2="100%">
-                            <stop offset="0%" style="stop-color:var(--primary-start)"></stop>
-                            <stop offset="100%" style="stop-color:var(--primary-end)"></stop>
-                        </linearGradient>
-                    </defs>
-                    <path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="url(#logoGradient)"></path>
-                    <path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill="url(#logoGradient)" fill-rule="evenodd"></path>
-                </svg>
-                <h1 class="text-xl font-bold">C&M Salon</h1>
-            </div>
-            <nav class="hidden items-center gap-8 text-sm font-medium lg:flex">
-                <a class="hover:text-primary-start transition-colors" href="#home">Home</a>
-                <a class="hover:text-primary-start transition-colors" href="#services">Services</a>
-                <a class="hover:text-primary-start transition-colors" href="#about">About</a>
-                <a class="hover:text-primary-start transition-colors" href="#contact">Contact</a>
-            </nav>
-            <div class="flex items-center gap-4">
-               
-                <button class="p-2 lg:hidden" id="mobile-menu-button">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+    <!-- Single Header - Fixed Version -->
+    <header class="fixed w-full bg-gradient-to-r from-rose-50 to-pink-100 backdrop-blur-md z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <svg class="h-8 w-8 text-primary-start" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:var(--primary-start)"></stop>
+                                <stop offset="100%" style="stop-color:var(--primary-end)"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="url(#logoGradient)"></path>
+                        <path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill="url(#logoGradient)" fill-rule="evenodd"></path>
+                    </svg>
+                    <h1 class="text-xl font-bold text-gray-800">C&M Salon</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">Contact</a>
+                </nav>
+                
+                <!-- Mobile menu button -->
+                <button class="md:hidden text-gray-700" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
+            </div>
+            
+            <!-- Mobile Menu (Hidden by default) -->
+            <div class="md:hidden hidden bg-white mt-3 rounded-lg shadow-lg p-4" id="mobile-menu">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="text-gray-700 hover:text-pink-500 font-medium py-2" onclick="closeMobileMenu()">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-pink-500 font-medium py-2" onclick="closeMobileMenu()">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-pink-500 font-medium py-2" onclick="closeMobileMenu()">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-pink-500 font-medium py-2" onclick="closeMobileMenu()">Contact</a>
+                </div>
             </div>
         </div>
     </header>
 
-  <header class="fixed w-full bg-gradient-to-r from-rose-50 to-pink-100 backdrop-blur-md z-50 shadow-sm">
-    <div class="container mx-auto px-4 py-3">
-        <div class="flex justify-between items-center">
-            <!-- Logo -->
-            <div class="text-xl font-bold text-gray-800 font-['Playfair_Display']">
-               C&M Salon
-            </div>
-            
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex space-x-6">
-                <a href="#home" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">Home</a>
-                <a href="#services" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">Service</a>
-                <a href="#about" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">About</a>
-                <a href="#contact" class="text-gray-700 hover:text-pink-500 font-medium transition-colors">Contact</a>
-            </nav>
-            
-            <!-- Mobile menu button -->
-            <button class="md:hidden text-gray-700" id="mobile-menu-button">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
-        
-        <!-- Mobile Menu (Hidden by default) -->
-        <div class="md:hidden hidden bg-white mt-3 rounded-lg shadow-lg p-4" id="mobile-menu">
-            <div class="flex flex-col space-y-3">
-                <a href="#home" class="text-gray-700 hover:text-pink-500 font-medium py-2">Home</a>
-                <a href="#services" class="text-gray-700 hover:text-pink-500 font-medium py-2">Service</a>
-                <a href="#about" class="text-gray-700 hover:text-pink-500 font-medium py-2">About</a>
-                <a href="#contact" class="text-gray-700 hover:text-pink-500 font-medium py-2">Contact</a>
-            </div>
-        </div>
-    </div>
-</header>
-
     <!-- Hero Section -->
-    <section id="home" class="relative h-screen">
+    <section id="home" class="relative min-h-screen pt-20">
         <div class="absolute inset-0 h-full w-full bg-cover bg-center animate-panZoom" style='background-image: url("colorful-makeup-brushes-arranged-with-delicate-floral-accents-on-a-textured-surface-free-photo.jpeg");'></div>
         <div class="absolute inset-0 h-full w-full bg-black/40"></div>
         <div class="relative z-10 flex h-full items-center justify-center">
@@ -230,7 +208,7 @@ html, body {
     </section>
 
     <!-- Hair Services Section -->
-    <section id="services" class="py-16 px-4 sm:px-6 lg:px-8">
+    <section id="services" class="py-16 px-4 sm:px-6 lg:px-8 scroll-mt-20">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-4xl sm:text-5xl font-bold text-foreground-light dark:text-foreground-dark tracking-tighter">Our Hair Services</h2>
@@ -258,7 +236,6 @@ html, body {
                         <p class="mt-2 text-subtle-light dark:text-subtle-dark">Smooth and straighten your hair with our professional keratin treatment.</p>
                     </div>
                 </div>
-              
             </div>
             <div class="mt-16 text-center">
                 <button class="bg-primary-gradient text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all duration-300 transform hover:scale-105">
@@ -269,7 +246,7 @@ html, body {
     </section>
 
     <!-- Nail & Face Services Section -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-soft">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-soft scroll-mt-20">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-extrabold tracking-tighter text-gray-900 dark:text-white sm:text-5xl">Nail Care & Face Beauty</h2>
@@ -324,18 +301,16 @@ html, body {
                 <div>
                     <h2 class="mb-8 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Makeup Face Beauty</h2>
                     <div class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
-                       
                         <div class="group flex flex-col gap-4">
                             <div class="relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:shadow-primary/30">
                                 <div class="h-56 w-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110" style='background-image: url("img5.jpg");'></div>
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent backdrop-blur-[1px] transition-all duration-300 group-hover:backdrop-blur-0"></div>
                             </div>
                             <div>
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white"> Henna Tatoo</h3>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white"> Henna Tattoo</h3>
                                 <p class="text-sm text-gray-600 dark:text-gray-400">For beautiful, temporary body art, trust our professional henna tattoo service for all occasions.</p>
                             </div>
                         </div>
-                       
                         <div class="group flex flex-col gap-4">
                             <div class="relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:shadow-primary/30">
                                 <div class="h-56 w-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCz7ywHQAjWtr9dNDXitnaGdRG8d34_wCeqVnJN87UxlrnNPr2mhOAnvCksHw-wynwwEpEcmM5jIs6IRjIVwakwvfuBo5VIrMUu7r3tlNV0Lm1zlepWx7FooGt2J1rdWFHMI4LQL0xKdpiJiGiMSCLSO9FfSvH_TsO0xJad77KI15L7bEn4ylk9-vQJrOrRX3anb6GrR7zd4wTwcyizlNTVCnqkTF-9rxVD2Cs_r-x5z-uKknr1RglN0rUmxlSsdZvoQhgLZuMIu1L9");'></div>
@@ -353,42 +328,41 @@ html, body {
     </section>
 
     <!-- About Section -->
- <section id="about" class="py-12 md:py-20 scroll-mt-24 bg-white relative z-10">
-    <div class="container mx-auto px-4">
-        <div class="text-center mb-8 md:mb-12">
-            <h2 class="text-2xl md:text-4xl font-bold text-gray-800">About Us</h2>
-            <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
-                Discover the heart and soul of Luminous Beauty.
-            </p>
-        </div>
-        
-        <div class="max-w-4xl mx-auto">
-            <div class="space-y-8 md:space-y-12">
-                <div>
-                    <h3 class="text-xl md:text-2xl font-bold text-primary mb-4">Our Story</h3>
-                    <p class="text-gray-700 leading-relaxed text-sm md:text-base">
-                        Luminous Beauty was founded in 2010 with a vision to redefine beauty and wellness. 
-                        Our journey began with a small team of passionate stylists and has grown into a 
-                        renowned salon known for its exceptional service and innovative techniques.
-                    </p>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl md:text-2xl font-bold text-primary mb-4">Our Mission</h3>
-                    <p class="text-gray-700 leading-relaxed text-sm md:text-base">
-                        At Luminous Beauty, our mission is to enhance natural beauty and promote overall 
-                        well-being. We believe in the power of self-care and strive to create a sanctuary 
-                        where clients can relax, rejuvenate, and discover their best selves.
-                    </p>
+    <section id="about" class="py-12 md:py-20 scroll-mt-20 bg-white relative z-10">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8 md:mb-12">
+                <h2 class="text-2xl md:text-4xl font-bold text-gray-800">About Us</h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
+                    Discover the heart and soul of C&M Salon.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8 md:space-y-12">
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-bold text-primary mb-4">Our Story</h3>
+                        <p class="text-gray-700 leading-relaxed text-sm md:text-base">
+                            C&M Salon was founded with a vision to redefine beauty and wellness. 
+                            Our journey began with a small team of passionate stylists and has grown into a 
+                            renowned salon known for its exceptional service and innovative techniques.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-bold text-primary mb-4">Our Mission</h3>
+                        <p class="text-gray-700 leading-relaxed text-sm md:text-base">
+                            At C&M Salon, our mission is to enhance natural beauty and promote overall 
+                            well-being. We believe in the power of self-care and strive to create a sanctuary 
+                            where clients can relax, rejuvenate, and discover their best selves.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 relative">
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 relative scroll-mt-20">
         <div class="absolute inset-0 z-0">
             <div class="absolute -top-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-br from-primary to-secondary opacity-20 blur-3xl"></div>
             <div class="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-tl from-primary to-secondary opacity-20 blur-3xl"></div>
@@ -426,46 +400,43 @@ html, body {
                     <div>
                         <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
                         <div class="flex space-x-4">
-                           
                             <a class="hover:text-primary transition-colors" href="https://www.facebook.com/people/Charo-Maro/100066272450190/">
                                 <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M232,128A104,104,0,1,1,39.21,63.1c.14-.23.29-.46.44-.69A104,104,0,0,1,232,128ZM136,104a8,8,0,0,0-16,0v24H96a8,8,0,0,0,0,16h24v48a8,8,0,0,0,16,0V144h24a8,8,0,0,0,0-16H136Z"></path></svg>
                             </a>
-                         
                         </div>
                     </div>
                 </div>
-              <!-- In the Contact Section, replace the entire form with this: -->
-<div class="glassmorphism rounded-xl p-6 sm:p-8 lg:p-10">
-    <form action="https://formspree.io/f/mblzkqwq" method="POST" class="space-y-6" id="contact-form">
-        <div>
-            <label class="sr-only" for="name">Name</label>
-            <input class="form-input w-full rounded border-none bg-background-light/50 dark:bg-background-dark/50 text-text-dark dark:text-text-light placeholder-text-dark/50 dark:placeholder-text-light/50 focus:ring-2 focus:ring-primary h-12 px-4 transition-all duration-300" 
-                   id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div>
-            <label class="sr-only" for="email">Email</label>
-            <input class="form-input w-full rounded border-none bg-background-light/50 dark:bg-background-dark/50 text-text-dark dark:text-text-light placeholder-text-dark/50 dark:placeholder-text-light/50 focus:ring-2 focus:ring-primary h-12 px-4 transition-all duration-300" 
-                   id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-        <div>
-            <label class="sr-only" for="phone">Phone Number</label>
-            <input class="form-input w-full rounded border-none bg-background-light/50 dark:bg-background-dark/50 text-text-dark dark:text-text-light placeholder-text-dark/50 dark:placeholder-text-light/50 focus:ring-2 focus:ring-primary h-12 px-4 transition-all duration-300" 
-                   id="phone" name="phone" placeholder="Phone Number" type="tel">
-        </div>
-        <div>
-            <label class="sr-only" for="message">Message</label>
-            <textarea class="form-textarea w-full rounded border-none bg-background-light/50 dark:bg-background-dark/50 text-text-dark dark:text-text-light placeholder-text-dark/50 dark:placeholder-text-light/50 focus:ring-2 focus:ring-primary p-4 transition-all duration-300" 
-                      id="message" name="message" placeholder="Message" rows="5" required></textarea>
-        </div>
-        <div>
-            <button class="w-full rounded bg-primary px-6 py-3 text-base font-semibold text-white shadow-lg shadow-primary/20 hover:bg-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all duration-300 active:scale-95" 
-                    type="submit" id="submit-btn">
-                Send Message
-            </button>
-        </div>
-        <div id="form-message" class="hidden text-center p-4 rounded-lg"></div>
-    </form>
-</div>
+                <div class="glassmorphism rounded-xl p-6 sm:p-8 lg:p-10">
+                    <form action="https://formspree.io/f/mblzkqwq" method="POST" class="space-y-6" id="contact-form">
+                        <div>
+                            <label class="sr-only" for="name">Name</label>
+                            <input class="form-input w-full rounded border-none bg-background-light/50 dark:bg-background-dark/50 text-text-dark dark:text-text-light placeholder-text-dark/50 dark:placeholder-text-light/50 focus:ring-2 focus:ring-primary h-12 px-4 transition-all duration-300" 
+                                   id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div>
+                            <label class="sr-only" for="email">Email</label>
+                            <input class="form-input w-full rounded border-none bg-background-light/50 dark:bg-background-dark/50 text-text-dark dark:text-text-light placeholder-text-dark/50 dark:placeholder-text-light/50 focus:ring-2 focus:ring-primary h-12 px-4 transition-all duration-300" 
+                                   id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                        <div>
+                            <label class="sr-only" for="phone">Phone Number</label>
+                            <input class="form-input w-full rounded border-none bg-background-light/50 dark:bg-background-dark/50 text-text-dark dark:text-text-light placeholder-text-dark/50 dark:placeholder-text-light/50 focus:ring-2 focus:ring-primary h-12 px-4 transition-all duration-300" 
+                                   id="phone" name="phone" placeholder="Phone Number" type="tel">
+                        </div>
+                        <div>
+                            <label class="sr-only" for="message">Message</label>
+                            <textarea class="form-textarea w-full rounded border-none bg-background-light/50 dark:bg-background-dark/50 text-text-dark dark:text-text-light placeholder-text-dark/50 dark:placeholder-text-light/50 focus:ring-2 focus:ring-primary p-4 transition-all duration-300" 
+                                      id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                        </div>
+                        <div>
+                            <button class="w-full rounded bg-primary px-6 py-3 text-base font-semibold text-white shadow-lg shadow-primary/20 hover:bg-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all duration-300 active:scale-95" 
+                                    type="submit" id="submit-btn">
+                                Send Message
+                            </button>
+                        </div>
+                        <div id="form-message" class="hidden text-center p-4 rounded-lg"></div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -479,119 +450,108 @@ html, body {
 
     <script>
         // Mobile menu functionality
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const closeMenuButton = document.getElementById('close-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        function openMobileMenu() {
-            mobileMenu.classList.remove('hidden');
-            mobileMenu.classList.add('flex');
-        }
-        
-        function closeMobileMenu() {
-            mobileMenu.classList.remove('flex');
-            mobileMenu.classList.add('hidden');
-        }
-        
-        mobileMenuButton.addEventListener('click', openMobileMenu);
-        closeMenuButton.addEventListener('click', closeMobileMenu);
-        
-        // Fade in sections on scroll
-        document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('.fade-in-section');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                    }
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
                 });
-            }, {
-                threshold: 0.1
-            });
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-        });
-        
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('shadow-md');
-            } else {
-                header.classList.remove('shadow-md');
             }
+            
+            // Close mobile menu when clicking on links
+            const mobileLinks = document.querySelectorAll('#mobile-menu a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('#mobile-menu') && !event.target.closest('#mobile-menu-button')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
         });
 
         // Contact form handling
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contact-form');
-    const submitBtn = document.getElementById('submit-btn');
-    const formMessage = document.getElementById('form-message');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', async function(e) {
-            e.preventDefault();
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('submit-btn');
+            const formMessage = document.getElementById('form-message');
             
-            // Show loading state
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-            
-            try {
-                const formData = new FormData(contactForm);
-                const response = await fetch(contactForm.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
+            if (contactForm) {
+                contactForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    // Show loading state
+                    submitBtn.textContent = 'Sending...';
+                    submitBtn.disabled = true;
+                    
+                    try {
+                        const formData = new FormData(contactForm);
+                        const response = await fetch(contactForm.action, {
+                            method: 'POST',
+                            body: formData,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        });
+                        
+                        if (response.ok) {
+                            // Success message
+                            showFormMessage('Thank you for your message! We will get back to you soon.', 'success');
+                            contactForm.reset();
+                        } else {
+                            // Error message
+                            showFormMessage('Sorry, there was an error sending your message. Please try again.', 'error');
+                        }
+                    } catch (error) {
+                        // Network error
+                        showFormMessage('Network error. Please check your connection and try again.', 'error');
+                    } finally {
+                        // Reset button
+                        submitBtn.textContent = 'Send Message';
+                        submitBtn.disabled = false;
                     }
                 });
+            }
+            
+            function showFormMessage(message, type) {
+                formMessage.textContent = message;
+                formMessage.className = 'text-center p-4 rounded-lg ';
                 
-                if (response.ok) {
-                    // Success message
-                    showFormMessage('Thank you for your message! We will get back to you soon.', 'success');
-                    contactForm.reset();
+                if (type === 'success') {
+                    formMessage.classList.add('bg-green-100', 'text-green-800', 'dark:bg-green-800', 'dark:text-green-100');
                 } else {
-                    // Error message
-                    showFormMessage('Sorry, there was an error sending your message. Please try again.', 'error');
+                    formMessage.classList.add('bg-red-100', 'text-red-800', 'dark:bg-red-800', 'dark:text-red-100');
                 }
-            } catch (error) {
-                // Network error
-                showFormMessage('Network error. Please check your connection and try again.', 'error');
-            } finally {
-                // Reset button
-                submitBtn.textContent = 'Send Message';
-                submitBtn.disabled = false;
+                
+                formMessage.classList.remove('hidden');
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                }, 5000);
             }
         });
-    }
-    
-    function showFormMessage(message, type) {
-        formMessage.textContent = message;
-        formMessage.className = 'text-center p-4 rounded-lg ';
-        
-        if (type === 'success') {
-            formMessage.classList.add('bg-green-100', 'text-green-800', 'dark:bg-green-800', 'dark:text-green-100');
-        } else {
-            formMessage.classList.add('bg-red-100', 'text-red-800', 'dark:bg-red-800', 'dark:text-red-100');
-        }
-        
-        formMessage.classList.remove('hidden');
-        
-        // Hide message after 5 seconds
-        setTimeout(() => {
-            formMessage.classList.add('hidden');
-        }, 5000);
-    }
-});
 
-         // Mobile menu toggle
-    document.getElementById('mobile-menu-button').addEventListener('click', function() {
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenu.classList.toggle('hidden');
-    });
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     </script>
 </body>
-
 </html>
 
